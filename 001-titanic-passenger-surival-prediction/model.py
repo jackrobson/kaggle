@@ -10,18 +10,25 @@ train_data = pd.read_csv('../input/titanic/train.csv')
 test_data = pd.read_csv('../input/titanic/test.csv')
 
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.impute import SimpleImputer
 
 test_data = pd.read_csv('../input/titanic/test.csv')
 
 y = train_data["Survived"]
 
-features = ["Pclass", "Sex", "SibSp", "Parch"]
-X = pd.get_dummies(train_data[features])
+features = ["Pclass", "Sex", "SibSp", "Parch", "Age"]
+X_train = pd.get_dummies(train_data[features])
 X_test = pd.get_dummies(test_data[features])
 
-model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=1)
-model.fit(X, y)
-predictions = model.predict(X_test)
+imp = SimpleImputer(missing_values=np.nan, strategy="mean")
+imp = imp.fit(X_train)
+
+X_train_imp = imp.transform(X_train)
+model = RandomForestClassifier(n_estimators=1000, max_depth=32, random_state=1)
+model.fit(X_train_imp, y)
+
+X_test_imp = imp.transform(X_test)
+predictions = model.predict(X_test_imp)
 
 output = pd.DataFrame({"PassengerId": test_data.PassengerId, "Survived": predictions})
 output.to_csv("my_submission.csv", index=False)
