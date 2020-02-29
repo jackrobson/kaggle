@@ -1,3 +1,8 @@
+Ideas:
+(1) add more columns
+(2) remove rows with missing data
+(3) configure RandomForestClassifier to incorporate missing data
+
 ### Version 1 ###
 Score: 0.77511
 Description: Followed Kaggle introduction tutorial (https://www.kaggle.com/alexisbcook/titanic-tutorial)
