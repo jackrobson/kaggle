@@ -1,3 +1,7 @@
+Ideas:
+* AutoML
+* featuretools
+
 ### Version 3 ###
 Score: 0.77511
 Description: Kept age column and remove rows with NaN values.
