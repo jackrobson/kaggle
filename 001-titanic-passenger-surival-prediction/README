@@ -1,6 +1,13 @@
 Ideas:
-* AutoML
-* featuretools
+* search dataset for features than predict survival by > 50%
+
+Interesting discussions to look at:
+* https://www.kaggle.com/c/titanic/discussion/28323
+
+### Version 4 ###
+Score: 0.76555
+Description: Copied cooleel's try at AutoML.
+Source: https://www.kaggle.com/cooleel/a-quick-try-of-h2o-automl-on-titanic-dataset/code
 
 ### Version 3 ###
 Score: 0.77511
