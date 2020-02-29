@@ -1,10 +1,10 @@
-Ideas:
-(1) remove rows with missing data
+### Version 3 ###
+Score: 0.77511
+Description: Kept age column and remove rows with NaN values.
 
 ### Version 2 ###
 Score: 0.72248
 Description: Added age column and replaced NaN values with the mean.
-Notebook: https://www.kaggle.com/jackrobsongateshead/getting-started-with-titantic/
 
 ### Version 1 ###
 Score: 0.77511

@@ -1,3 +1,5 @@
+# version 3
+
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
@@ -10,24 +12,20 @@ train_data = pd.read_csv('../input/titanic/train.csv')
 test_data = pd.read_csv('../input/titanic/test.csv')
 
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.impute import SimpleImputer
 
 test_data = pd.read_csv('../input/titanic/test.csv')
 
 y = train_data["Survived"]
 
-features = ["Pclass", "Sex", "SibSp", "Parch", "Age"]
-X_train = pd.get_dummies(train_data[features])
+features = ["Pclass", "Sex", "SibSp", "Parch"]
+X = pd.get_dummies(train_data[features])
+X_imp = X.dropna()
+
 X_test = pd.get_dummies(test_data[features])
+X_test_imp = X_test.dropna()
 
-imp = SimpleImputer(missing_values=np.nan, strategy="mean")
-imp = imp.fit(X_train)
-
-X_train_imp = imp.transform(X_train)
-model = RandomForestClassifier(n_estimators=1000, max_depth=32, random_state=1)
-model.fit(X_train_imp, y)
-
-X_test_imp = imp.transform(X_test)
+model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=1)
+model.fit(X_imp, y)
 predictions = model.predict(X_test_imp)
 
 output = pd.DataFrame({"PassengerId": test_data.PassengerId, "Survived": predictions})
