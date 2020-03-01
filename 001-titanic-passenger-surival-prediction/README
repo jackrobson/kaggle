@@ -9,6 +9,11 @@ Interesting discussions to look at:
 Best performing notebooks:
 (0.95693) https://www.kaggle.com/scirpus/sack-of-potatoes-complex-math/code
 
+### Version 5 ###
+Score: 0.77990
+Description: Python model for the Google Sheets model I created using the Excel discussion.
+Discussion: https://www.kaggle.com/c/titanic/discussion/28323
+
 ### Version 4 ###
 Score: 0.76555
 Description: Copied cooleel's try at AutoML.
