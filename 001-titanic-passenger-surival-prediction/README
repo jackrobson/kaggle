@@ -1,6 +1,7 @@
 Ideas:
 * search dataset for features than predict survival by > 50%
 * group ages and see if that makes any difference to predicting male/female survival
+* group non-ages and see if that makes any difference to predicting male/female survival
 * look at how SibSp / Pclass relationship affects survival
 * look at how Parch / Pclass relationship affects survival
 * investigate genetic programming
@@ -10,6 +11,14 @@ Interesting discussions to look at:
 
 Best performing notebooks to investigate:
 (0.95693) https://www.kaggle.com/scirpus/sack-of-potatoes-complex-math/code
+
+### Version 6 ###
+Score: 0.77990.
+Features:
+* assumes males perish
+* assumes females aged < 1 survive
+* assumes lower class females aged 1-3 or 6+ perish
+* assumes lower class females who spent > $20 on fare perish
 
 ### Version 5 ###
 Score: 0.77990

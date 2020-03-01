@@ -1,4 +1,4 @@
-# Version 6
+# Version 5
 
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
@@ -8,18 +8,16 @@ test_data = pd.read_csv('../input/titanic/test.csv')
 
 #
 # After studying train.csv in a pivot Tables on Google Sheets,
-# it looks like lower class girls, aged 1-3 or 6+ perish but < 12 months surive.
+# it looks like their is a cluster of women who perish.
+# They are lower class and spend >$20 on their ticket.
 # This model uses this gathered information to predict.
+#
+# Replicating Google Sheets function on test_data.csv:
+# =IF(E2="male",0,IF(C2=3,IF(J2>20,0,1),1))
 #
 
 def predict(row):
     if row["Sex"] == "male":
-        return 0
-    if row["Age"] < 1:
-        return 1
-    if row["Pclass"] == 3 and row["Age"] >= 1 and row["Age"] <= 3:
-        return 0
-    if row["Pclass"] == 3 and row["Age"] >= 6:
         return 0
     if row["Pclass"] == 3 and row["Fare"] > 20:
         return 0
