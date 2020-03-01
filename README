@@ -2,3 +2,5 @@ This repository contains models aimed at solving the challenges posed at https:/
 
 Todo:
 * Code a Python model for the Google Sheets model created using the Excel discussion.
+* Code another model that predicts that women with > 2 SibSp don't survive.
+* Code another model that predicts that women with > 3 Parch don't survive.
