@@ -1,6 +1,8 @@
 Ideas:
 * search dataset for features than predict survival by > 50%
 * group ages and see if that makes any difference to predicting male/female survival
+* look at how SibSp / Pclass relationship affects survival
+* look at how Parch / Pclass relationship affects survival
 * investigate genetic programming
 
 Interesting discussions to look at:

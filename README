@@ -1,8 +1,6 @@
 This repository contains models aimed at solving the challenges posed at https://www.kaggle.com/c/
 
 Todo:
-* Code another model that predicts that women with > 2 SibSp don't survive.
-* Code another model that predicts that women with > 3 Parch don't survive.
 * Code another model that predicts lower class females who are aged 1-3 or 6+ perish.
 * Code another model that predicts upper class males aged <= 18 survive.
 * Code another model that predicts middle class males aged <= 12 survive.
