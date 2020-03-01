@@ -1,5 +1,6 @@
 Ideas:
 * search dataset for features than predict survival by > 50%
+* group ages and see if that makes any difference to predicting male/female survival
 * investigate genetic programming
 
 Interesting discussions to look at:
