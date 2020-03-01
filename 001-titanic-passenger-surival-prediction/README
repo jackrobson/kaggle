@@ -1,6 +1,5 @@
 Ideas:
 * search dataset for features than predict survival by > 50%
-* see if can tweak lower class female 19+ who spent > $20 on cabin survival rates
 * group ages and see if that makes any difference to predicting male/female survival
 * group non-ages and see if that makes any difference to predicting male/female survival
 * look at how SibSp / Pclass relationship affects survival
@@ -12,6 +11,15 @@ Interesting discussions to look at:
 
 Best performing notebooks to investigate:
 (0.95693) https://www.kaggle.com/scirpus/sack-of-potatoes-complex-math/code
+
+Current competitor: Version 5
+
+### Version 8 ###
+Score: 0.77990
+Features:
+* males perish
+* females aged < 1 year old survive
+* lower class females who spent > $20 on fare perish
 
 ### Version 7 ###
 Score: 0.75119
@@ -36,6 +44,10 @@ Features:
 Score: 0.77990
 Description: Python model for the Google Sheets model I created using the Excel discussion.
 Discussion: https://www.kaggle.com/c/titanic/discussion/28323
+Features:
+* assumes males perish
+* assumes lower class females who spent > $20 on fare perish
+
 
 ### Version 4 ###
 Score: 0.76555
