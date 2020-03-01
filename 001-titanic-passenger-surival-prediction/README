@@ -13,7 +13,7 @@ Best performing notebooks to investigate:
 (0.95693) https://www.kaggle.com/scirpus/sack-of-potatoes-complex-math/code
 
 ### Version 6 ###
-Score: 0.77990.
+Score: 0.75119
 Features:
 * assumes males perish
 * assumes females aged < 1 survive
