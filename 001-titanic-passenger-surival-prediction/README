@@ -1,9 +1,13 @@
 Ideas:
 * search dataset for features than predict survival by > 50%
+* investigate genetic programming
 
 Interesting discussions to look at:
 * https://www.kaggle.com/c/titanic/discussion/28323
 * https://www.kaggle.com/gunesevitan/titanic-advanced-feature-engineering-tutorial
+
+Best performing notebooks:
+(0.95693) https://www.kaggle.com/scirpus/sack-of-potatoes-complex-math/code
 
 ### Version 4 ###
 Score: 0.76555
