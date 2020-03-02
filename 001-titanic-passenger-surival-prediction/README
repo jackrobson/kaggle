@@ -14,6 +14,14 @@ Best performing notebooks to investigate:
 
 Current competitor: Version 5
 
+### Version 9 ###
+Score: 0.78468
+Features:
+* upper class males aged <= 18 survive
+* other males perish
+* lower class females who spent > $20 on fare perish
+* other females survive
+
 ### Version 8 ###
 Score: 0.77990
 Features:

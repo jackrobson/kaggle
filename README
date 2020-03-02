@@ -1,6 +1,5 @@
 This repository contains models aimed at solving the challenges posed at https://www.kaggle.com/c/
 
 Todo:
-* Code another model that predicts upper class males aged <= 18 survive.
 * Code another model that predicts middle class males aged <= 12 survive.
 * Code another model that predicts lower class males aged < 1 survive.
